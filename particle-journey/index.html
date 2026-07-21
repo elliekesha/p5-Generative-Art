@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voronoi — Bloop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <!-- Record button — bottom right -->
+  <button id="rec-btn" onclick="toggleRecord()">● record  15s</button>
+
+  <!-- HUD — top left, toggle with H -->
+  <div id="hud" class="hud hidden">
+    <div class="hud-row"><span>sites</span><span id="hud-sites">—</span></div>
+    <div class="hud-row"><span>fps</span><span id="hud-fps">—</span></div>
+  </div>
+
+  <script src="voronoi.js"></script>
+</body>
+</html>
